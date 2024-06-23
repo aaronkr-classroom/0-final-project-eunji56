@@ -1,0 +1,44 @@
+<h1 class="center">Movie Data for
+    <%= movie.title %>
+  </h1>
+  
+  <table class="table">
+    <tr>
+      <th>Title</th>
+      <td>
+        <%= movie.title %>
+      </td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>
+        <%= movie.description%>
+      </td>
+    </tr>
+    <tr>
+      <th>Max Students</th>
+      <td>
+        <%= movie.maxStudents%>
+      </td>
+    </tr>
+    <tr>
+      <th>Cost</th>
+      <td>$
+        <%= movie.cost%>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <div>
+    <a class="button" href="<%=`/movies/${movie._id}/edit`%>">
+      Edit Movie Details
+    </a>
+  </div>
+  <div>
+    <a class="button" href="<%= `/movies/${movie._id}/delete?_method=DELETE` %>" onclick="return confirm('Are you sure you want to delete this record?')" a>Delete</a>
+  </div>
+  <div>
+    <a class="button" href="/movies">View all movies</a>
+  </div>
+  

@@ -1,7 +1,9 @@
 <!-- views/partials/navigation.ejs -->
 
 <!-- 메뉴 -->
-<nav class="menu">
+<nav
+  class="menu nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+>
   <ul class="nav-bar nav">
     <li class="nav-item">
       <a class="nav-link menu-item" name="About" href="/about">소개</a>
@@ -84,6 +86,22 @@
       <div class="dropdown-menu" aria-labelledby="dropdown04">
         <a class="dropdown-item" href="/talks">View All</a>
         <a class="dropdown-item" href="/talks/new">Create New</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="menu-item nav-link dropdown-toggle"
+        id="dropdown05"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        name="Movies"
+        href="/movies"
+        >영화</a
+      >
+      <div class="dropdown-menu" aria-labelledby="dropdown05">
+        <a class="dropdown-item" href="/movies">View All</a>
+        <a class="dropdown-item" href="/movies/new">Create New</a>
       </div>
     </li>
   </ul>
